@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title><?php wp_title( '|', true, 'right' ); ?></title>
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-    <?php wp_head(); ?>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title><?php if(is_home()) { echo bloginfo("name"); echo " | "; echo bloginfo("description"); } else { echo wp_title(" | ", false, right); echo bloginfo("name"); } ?></title>
+  <?php wp_head(); ?>
+  <meta name="viewport" content="initial-scale=1">
+</head>
+
+
   <body>
 
     <nav class="navbar navbar-default" role="navigation">
