@@ -37,6 +37,7 @@ function add_widgets_init() {
  }
  add_action( 'widgets_init', 'add_widgets_init' );
 add_theme_support( 'post-thumbnails' );
-
+add_theme_support( 'automatic-feed-links' );
+add_theme_support( "title-tag" );
 
  ?>

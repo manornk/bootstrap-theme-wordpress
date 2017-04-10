@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes(); ?>>
 <head>
   <meta charset="utf-8">
   <title><?php if(is_home()) { echo bloginfo("name"); echo " | "; echo bloginfo("description"); } else { echo wp_title(" | ", false, right); echo bloginfo("name"); } ?></title>
@@ -8,11 +8,11 @@
 </head>
 
 
-  <body>
+  <body class="<?php body_class( $class ); ?>">
 
     <nav class="navbar navbar-default" role="navigation">
   <div class="container">
-    <div class="navbar-header">
+    <div class="navbar-headers">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
