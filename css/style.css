@@ -14,9 +14,9 @@ a{
   font-size: 12px;
 }
 #widget{
-
-
+  margin-bottom: 20px;
 }
 .rounded{
-  
+  font-weight: normal;
+  color: #2c3e50;
 }

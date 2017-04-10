@@ -20,7 +20,9 @@ function script_enqueue() {
 
  add_action( 'wp_enqueue_scripts', 'script_enqueue' );
 
-
+ register_nav_menus( array(
+         'primary' => __( 'Primary Menu', 'Primary Menu' ),
+ ) );
 
 function add_widgets_init() {
 
