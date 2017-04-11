@@ -13,6 +13,7 @@
 
       <p><?php the_content('(more...)'); ?></p>
       <p><?php the_tags(); ?></p>
+      
     </div>
     <?php endwhile; else: ?>
     <p><?php echo 'Sorry, no posts matched your criteria.'; ?></p>

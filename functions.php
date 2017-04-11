@@ -1,5 +1,5 @@
 <?php
-require_once('wp-bootstrap-navwalker.php');
+require_once('inc/wp-bootstrap-navwalker.php');
 // Add Bootstrap and JQuery
 function script_enqueue() {
      wp_register_style( 'custom-style', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '1', 'all' );
@@ -36,8 +36,5 @@ function add_widgets_init() {
  	) );
  }
  add_action( 'widgets_init', 'add_widgets_init' );
-add_theme_support( 'post-thumbnails' );
-add_theme_support( 'automatic-feed-links' );
-add_theme_support( "title-tag" );
 
  ?>
